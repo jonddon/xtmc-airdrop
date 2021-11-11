@@ -4,7 +4,7 @@ import './App.css';
 import xtmcClaimAbi from './abi/xtmcClaimAbi.json'
 import { useState } from 'react';
 //Get the deployed Contract Address on BSC
-const xtmcClaimAddress = "0xb89998FecfC6Fb3E2C58b464F77Fca159Fda9a5A"
+const xtmcClaimAddress = "0x62F610816e9A5EDfCE8c3376d3ec381842f6D44A"
 
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
 
         </div>
         <div className="col-lg-12">
-          {chainId !== 97 && <div className="alert alert-danger text-center" role="alert">
+          {chainId !== 56 && <div className="alert alert-danger text-center" role="alert">
             Please connect to Binance smart chain
           </div>}
           {Errors !== "" && <div className="alert alert-danger text-center" role="alert">
