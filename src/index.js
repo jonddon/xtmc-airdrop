@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { ChainId, DAppProvider } from '@usedapp/core'
+import { DAppProvider } from '@usedapp/core'
 
 
 const config = {

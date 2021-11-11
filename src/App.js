@@ -21,8 +21,11 @@ function App() {
       const contract = new ethers.Contract(xtmcClaimAddress, xtmcClaimAbi, signer)
       try {
         const data = await contract.claim()
-        // console.log('data: ', data)
-        setSuccess("Successfully Claimed your Airdrop")
+        if (data) {
+          // console.log('data: ', data)
+          setSuccess("Successfully Claimed your Airdrop")
+        }
+
       } catch (errors) {
         setErrors(errors.data.message)
         // console.log("Error: ", errors.data.message)
